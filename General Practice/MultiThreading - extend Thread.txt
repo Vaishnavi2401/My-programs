@@ -1,0 +1,16 @@
+public class MyThread extends Thread{
+
+@Override
+public void run(){
+
+	system.out.println("executing child thread");
+}
+
+public static void main(string[] args){
+
+	Mythread thread = new MyThread();
+
+	thread.start();
+}
+
+}

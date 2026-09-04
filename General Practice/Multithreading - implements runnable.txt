@@ -1,0 +1,26 @@
+public class MyRunnable implements Runnable{
+
+@override 
+public void run(){
+
+system.out.println("new child thread");
+Thread.sleep(100);
+
+}
+
+	
+}
+
+public static void main(String[] args){
+
+MyRunnable myrunnable = new MYRunnable();
+
+Thread t = new Thread(myrunnable);
+Thread t2 = new Thread(myrunnable);
+
+t.start();
+t2.start();
+
+
+
+}
